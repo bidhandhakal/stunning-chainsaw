@@ -15,6 +15,7 @@
     "@react-three/fiber": "^9.3.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.23.24",
     "gsap": "^3.13.0",
     "lucide-react": "^0.545.0",
     "maath": "^0.10.8",
@@ -22,6 +23,7 @@
     "postprocessing": "^6.37.8",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "rough-notation": "^0.5.1",
     "tailwind-merge": "^3.3.1",
     "three": "^0.180.0"
   },
