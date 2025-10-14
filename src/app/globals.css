@@ -49,6 +49,20 @@ html.lenis {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Font5';
+  src: url('/fonts/font5.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font6';
+  src: url('/fonts/font6.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

@@ -4,6 +4,7 @@ import "./globals.css";
 import { MenuButton } from "@/components/ui/menu-button";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
+import Preloader from "@/components/ui/Preloader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,8 +33,9 @@ export default function RootLayout({
       >
         <SmoothScroll>
           <SmoothCursor />
-          <MenuButton />
+          <Preloader />
           {children}
+          <MenuButton />
         </SmoothScroll>
       </body>
     </html>
