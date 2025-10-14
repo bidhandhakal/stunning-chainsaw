@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Button } from "./button";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export function MenuButton() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +65,7 @@ export function MenuButton() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ delay: 0.2, duration: 0.3 }}
-              className="flex flex-col items-center gap-8 text-white font-2 font-[font2]"
+              className="flex flex-col items-center gap-5 text-white font-[font1]"
             >
               {[
                 { href: "/", text: "Home" },
@@ -91,6 +93,51 @@ export function MenuButton() {
                   </Link>
                 </motion.div>
               ))}
+
+              <motion.div
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 50, opacity: 0 }}
+                transition={{
+                  type: "tween",
+                  ease: [0.25, 0.1, 0.25, 1],
+                  duration: 0.7,
+                  delay: 0.45,
+                }}
+                className="flex gap-8 mt-8"
+              >
+                {[
+                  { href: "https://github.com/bidhandhakal", icon: FaGithub },
+                  { href: "https://x.com/bidxu", icon: FaXTwitter },
+                  {
+                    href: "https://linkedin.com/in/yourusername",
+                    icon: FaLinkedin,
+                  },
+                  {
+                    href: "https://instagram.com/yourusername",
+                    icon: FaInstagram,
+                  },
+                ].map((social, index) => (
+                  <motion.a
+                    key={social.href}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-gray-300 transition-colors"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 260,
+                      damping: 20,
+                      delay: 0.45 + index * 0.1,
+                    }}
+                  >
+                    <social.icon size={42} />
+                  </motion.a>
+                ))}
+              </motion.div>
             </motion.nav>
           </motion.div>
         )}
