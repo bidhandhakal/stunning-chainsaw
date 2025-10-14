@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main>
       <section className="min-h-screen flex items-center justify-center font-[font4] bg-white">
-        <div className="text-center text-7xl">
-          <p className="leading-relaxed">
+        <div className="text-center">
+          <p className="leading-relaxed text-7xl">
             I'm{" "}
             <Highlighter action="underline" color="#FF9800">
               Bidhan

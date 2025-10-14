@@ -32,7 +32,7 @@ export function Highlighter({
   action = "highlight",
   color = "#ffd1dc",
   strokeWidth = 1.5,
-  animationDuration = 600,
+  animationDuration = 700,
   iterations = 2,
   padding = 2,
   multiline = true,
@@ -43,7 +43,7 @@ export function Highlighter({
 
   const isInView = useInView(elementRef, {
     once: true,
-    margin: "-10%",
+    margin: "-100%",
   });
 
   // If isView is false, always show. If isView is true, wait for inView
