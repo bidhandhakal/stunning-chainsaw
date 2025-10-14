@@ -86,7 +86,7 @@ export function MenuButton() {
                 >
                   <Link
                     href={item.href}
-                    className="text-7xl uppercase font-bold tracking-wider hover:text-gray-300 transition-colors"
+                    className="text-7xl uppercase font-bold tracking-wider hover:text-[#FF9800] transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.text}
@@ -108,13 +108,13 @@ export function MenuButton() {
               >
                 {[
                   { href: "https://github.com/bidhandhakal", icon: FaGithub },
-                  { href: "https://x.com/bidxu", icon: FaXTwitter },
+                  { href: "https://x.com/bidxu51334", icon: FaXTwitter },
                   {
-                    href: "https://linkedin.com/in/yourusername",
+                    href: "https://linkedin.com/in/bidhandhakal365",
                     icon: FaLinkedin,
                   },
                   {
-                    href: "https://instagram.com/yourusername",
+                    href: "https://instagram.com/bidhandhakal365",
                     icon: FaInstagram,
                   },
                 ].map((social, index) => (

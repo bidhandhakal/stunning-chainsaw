@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Wee wo",
+  title: "BIDHAN | DEVELOPER",
   description: "Bidhan Dhakal Portfolio",
 };
 
