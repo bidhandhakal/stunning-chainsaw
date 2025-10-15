@@ -7,16 +7,18 @@ export default function Home() {
   return (
     <main>
       <section className="min-h-screen flex items-center justify-center font-[font4] bg-[#F8F8ff]">
-        <div className="text-center">
-          <p className="text-3xl md:text-7xl">
+        <div className="text-center p-9 md:p-20">
+          <p className="text-4xl md:text-7xl">
             I'm{" "}
             <Highlighter action="underline" color="#FF9800">
               Bidhan
             </Highlighter>{" "}
             crafting{" "}
-            <Highlighter action="highlight" color="#ff9800">
-              digital experiences.
-            </Highlighter>{" "}
+            <span className="block mt-4 md:mt-0 md:inline">
+              <Highlighter action="highlight" color="#ff9800">
+                digital experiences.
+              </Highlighter>{" "}
+            </span>
           </p>
         </div>
       </section>
