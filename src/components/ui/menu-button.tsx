@@ -12,7 +12,7 @@ export function MenuButton() {
 
   return (
     <>
-      <div className="fixed top-4 right-4 md:top-6 md:right-6 z-[60]">
+      <div className="fixed top-4 right-4 md:top-0 md:right-0 p-6 md:p-15 z-[60]">
         <Button
           variant="outline"
           size="icon"

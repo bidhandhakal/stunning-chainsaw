@@ -6,31 +6,15 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 export default function aboutpage() {
   return (
-    <div className="h-screen bg-[#b4b4b4] font-[font1]">
-      <div className="absolute top-0 left-0 p-15 flex items-center text-black">
-        <Avatar>
+    <div className="h-screen bg-[#f8f8ff] font-[font1]">
+      <div className="absolute top-5 md:top-0 left-4 md:left-0 p-6 md:p-15 flex items-center text-black">
+        <Avatar className="w-12 h-12 md:w-15 md:h-15">
           <AvatarImage src="https://github.com/bidhandhakal.png" />
           <AvatarFallback>BD</AvatarFallback>
         </Avatar>
-        <Link href="/">Go to </Link>
-      </div>
-
-      <Button
-        variant="link"
-        className="text-black text-2xl flex absolute items-center bottom-32 right-40"
-        asChild
-      >
-        <a
-          href="https://github.com/bidhandhakal"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @bidhandhakal
-        </a>
-      </Button>
-
-      <div className="flex items-center justify-end p-40 h-screen bg-[#ffffff]">
-        <DecayCard width={350} height={450}></DecayCard>
+        <div className="ml-2 text-2xl md:text-3xl font-[font4] uppercase">
+          Bidhan
+        </div>
       </div>
     </div>
   );
