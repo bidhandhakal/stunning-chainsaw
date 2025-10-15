@@ -33,8 +33,8 @@ export default function RootLayout({
       >
         <SmoothScroll>
           <SmoothCursor />
-          <Preloader />
           {children}
+          <Preloader />
           <MenuButton />
         </SmoothScroll>
       </body>

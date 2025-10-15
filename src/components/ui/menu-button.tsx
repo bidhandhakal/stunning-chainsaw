@@ -12,35 +12,35 @@ export function MenuButton() {
 
   return (
     <>
-      <div className="fixed top-6 right-6 z-[60]">
+      <div className="fixed top-4 right-4 md:top-6 md:right-6 z-[60]">
         <Button
           variant="outline"
           size="icon"
           onClick={() => setIsOpen(!isOpen)}
-          className={`w-16 h-16 relative rounded-full transition-colors border-none shadow-none bg-transparent hover:bg-transparent dark:hover:bg-white cursor-pointer ${
+          className={`w-12 h-12 md:w-16 md:h-16 relative rounded-full transition-colors border-none shadow-none bg-transparent hover:bg-transparent dark:hover:bg-white cursor-pointer ${
             isOpen ? "text-white" : "text-black"
           }`}
         >
-          <div className="relative w-16 h-16">
+          <div className="relative w-12 h-12 md:w-16 md:h-16">
             <span
-              className={`absolute top-1/2 left-1/2 block w-12 h-[3px] transition-all duration-300 ease-out ${
+              className={`absolute top-1/2 left-1/2 block w-8 md:w-12 h-[2px] md:h-[3px] transition-all duration-300 ease-out ${
                 isOpen
                   ? "bg-white -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-full"
-                  : "bg-black -translate-x-1/2 -translate-y-[10px] rounded-full"
+                  : "bg-black -translate-x-1/2 -translate-y-[8px] md:-translate-y-[10px] rounded-full"
               }`}
             />
             <span
-              className={`absolute top-1/2 left-1/2 block w-12 h-[3px] transition-all duration-300 ease-out ${
+              className={`absolute top-1/2 left-1/2 block w-8 md:w-12 h-[2px] md:h-[3px] transition-all duration-300 ease-out ${
                 isOpen
                   ? "bg-white opacity-0 -translate-x-1/2 -translate-y-1/2"
                   : "bg-black opacity-100 -translate-x-1/2 -translate-y-1/2 rounded-full"
               }`}
             />
             <span
-              className={`absolute top-1/2 left-1/2 block w-12 h-[3px] transition-all duration-300 ease-out ${
+              className={`absolute top-1/2 left-1/2 block w-8 md:w-12 h-[2px] md:h-[3px] transition-all duration-300 ease-out ${
                 isOpen
                   ? "bg-white -translate-x-1/2 -translate-y-1/2 -rotate-45 rounded-full"
-                  : "bg-black -translate-x-1/2 translate-y-[7px] rounded-full"
+                  : "bg-black -translate-x-1/2 translate-y-[6px] md:translate-y-[7px] rounded-full"
               }`}
             />
           </div>
@@ -65,7 +65,7 @@ export function MenuButton() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ delay: 0.2, duration: 0.3 }}
-              className="flex flex-col items-center gap-5 text-white font-[font1]"
+              className="flex flex-col items-center gap-3 md:gap-5 text-[#F8F8ff] font-[font1]"
             >
               {[
                 { href: "/", text: "Home" },
@@ -86,7 +86,7 @@ export function MenuButton() {
                 >
                   <Link
                     href={item.href}
-                    className="text-7xl uppercase font-bold tracking-wider hover:text-[#FF9800] transition-colors"
+                    className="text-5xl md:text-7xl uppercase font-bold hover:text-[#FF9800] transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.text}
@@ -104,7 +104,7 @@ export function MenuButton() {
                   duration: 0.7,
                   delay: 0.45,
                 }}
-                className="flex gap-8 mt-8"
+                className="flex gap-4 md:gap-8 mt-8 md:mt-8"
               >
                 {[
                   { href: "https://github.com/bidhandhakal", icon: FaGithub },
@@ -134,7 +134,7 @@ export function MenuButton() {
                       delay: 0.45 + index * 0.1,
                     }}
                   >
-                    <social.icon size={42} />
+                    <social.icon className="w-9 h-9 md:w-10 md:h-10" />
                   </motion.a>
                 ))}
               </motion.div>
