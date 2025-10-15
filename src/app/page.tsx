@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <section className="min-h-screen flex items-center justify-center font-[font4] bg-[#F8F8ff]">
         <div className="text-center">
-          <p className="leading-relaxed text-3xl md:text-7xl">
+          <p className="text-3xl md:text-7xl">
             I'm{" "}
             <Highlighter action="underline" color="#FF9800">
               Bidhan
@@ -21,7 +21,7 @@ export default function Home() {
         </div>
       </section>
       <section className="min-h-screen flex justify-center items-center bg-[#F8F8ff] font-[font4]">
-        <div className=" text-start p-15 md:p-50 ">
+        <div className=" text-start p-15 md:p-60 ">
           <ScrollReveal
             baseOpacity={5}
             enableBlur={true}
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
       </section>
       <section className="min-h-screen flex bg-[#F8F8ff] font-[font4]">
-        <div className=" text-start p-15 md:p-50">
+        <div className=" text-start p-15 md:p-60">
           <ScrollReveal
             baseOpacity={5}
             enableBlur={true}

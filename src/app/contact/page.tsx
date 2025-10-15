@@ -7,7 +7,7 @@ const page = (props: Props) => {
   return (
     <div className="flex justify-center items-center min-h-screen text-9xl font-[font4]">
       <Link href="/">
-        <p className="leading-relaxed text-7xl">
+        <p className="text-7xl">
           Bandai xa{" "}
           <Highlighter action="underline" color="#FF9800">
             Home
