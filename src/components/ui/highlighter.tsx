@@ -46,7 +46,6 @@ export function Highlighter({
     margin: "-100%",
   });
 
-  // If isView is false, always show. If isView is true, wait for inView
   const shouldShow = !isView || isInView;
 
   useEffect(() => {
